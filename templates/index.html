@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  {% block welcomebar %}
+    <div id="welcomebar" class="pure-u-1">
+      {% include 'widgets/welcomebar.html' %}
+    </div>
+  {% endblock%}
+
+  {% block articles_index %}
+    <div id="articles-index" class="pure-u-1">
+      {% include 'widgets/articles-index.html' %}
+    </div>
+  {% endblock %}
+
+{% endblock %}
